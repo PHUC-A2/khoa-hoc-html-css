@@ -1,0 +1,25 @@
+table,
+tr,
+td {
+  text-align: center;
+  min-width: 400px;
+  min-height: 200px;
+  border: 2px red solid;
+}
+
+body {
+  padding: 20px;
+}
+.tinhToan {
+  padding: 0px;
+  margin-top: 20px;
+}
+.buttonGiai {
+  width: 60px;
+  height: 20px;
+  text-align: center;
+  font-style: italic;
+}
+#resultCell {
+  font-size: 20px;
+}

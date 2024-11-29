@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý sinh viên</title>
+    <link rel="stylesheet" href="Baitap05.css">
+</head>
+<body>
+    <div class="full">
+       <main>
+        <h1>Quản lý sinh viên <img src="sv1.jpg" alt="sv1"></h1>
+        
+        <section class="nhap">
+            <form action="/themSinhVien" method="post">
+
+                <label for="maSinhVien">Mã sinh viên:</label>
+                <input type="text" name="maSinhVien" id="maSinhVien" placeholder="Nhập mã sinh viên..." required><br>
+
+                <label for="hoVaTen">Họ và tên:</label>
+                <input type="text" name="hoVaTen" id="hoVaTen" placeholder="Nhập họ và tên..." required><br>
+
+                <label for="diemToan">Điểm Toán:</label>
+                <input type="number" name="diemToan" id="diemToan" placeholder="Nhập điểm Toán..." required><br>
+                
+                <label for="diemVan">Điểm Văn:</label>
+                <input type="number" name="diemVan" id="diemVan" placeholder="Nhập điểm Văn..." required> <br>
+                
+                <label for="diemAnh">Điểm Anh:</label>
+                <input type="number" name="diemAnh" id="diemAnh" placeholder="Nhập điểm Anh..." required><br>
+                
+                <button type="submit" class="submit">Thêm sinh viên</button>
+                <button type="reset" class="reset">Làm lại</button>
+                <button type="button" class="button">Quay lại</button>
+
+            </form>
+            
+        </section>
+        <section class="hienThi">
+            <table>
+                <h2>Thông tin sinh viên</h2>
+                <thead>
+                    <tr>
+                        <th>Mã sinh viên</th>
+                        <th>Họ và tên</th>
+                        <th>Điểm Toán</th>
+                        <th>Điểm Văn</th>
+                        <th>Điểm Anh</th>
+                        <th>Điểm trung bình</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr th:each="sv : ${danhSach}">
+                        <td th:text="$sv.maSinhVien"></td>
+                        <td th:text="$sv.hoVaTen"></td>
+                        <td th:text="$sv.diemToan"></td>
+                        <td th:text="$sv.diemVan"></td>
+                        <td th:text="$sv.diemAnh"></td>
+                        <td th:text="$sv.tinhDiemTrungBinh()"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+       </main>
+    </div>
+</body>
+</html>

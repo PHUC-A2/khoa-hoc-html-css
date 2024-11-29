@@ -1,0 +1,99 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.full{
+    background-color:darkgray;
+    min-width: 100%;
+    min-height: 100%;
+    border: 2px wheat solid;
+    border-radius: 10px;
+}
+
+.full:hover{
+    border: 3px deepskyblue solid;
+}
+h1,h2{
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+    color: chocolate;
+}
+
+h1 img{
+    margin-top: 20px;
+    padding: 20px;
+    float: right;
+    width: 210px;
+    height: 200px;
+    border-radius: 100%;
+    border: 3px cornsilk solid;
+}
+
+h1 img:hover{
+    border: deeppink 3px solid;
+}
+.nhap form{
+    margin-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    padding-left: 20px;
+}
+label{
+    width: 100px;
+    color: brown;
+}
+input{
+    width: 200px;
+    border: 1px orange solid;
+    border-radius: 5px;
+}
+
+label,input{
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 20px;
+    height: 20px;
+    
+}
+
+.nhap button {
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 20px;
+    width: 120px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.submit{
+    background-color: cadetblue;
+}
+.reset{
+    background-color:khaki;
+}
+.button{
+    background-color: brown;
+}
+
+.submit:hover{
+    background-color: yellowgreen;
+}
+
+.reset:hover{
+    background-color: yellowgreen;
+}
+
+.button:hover{
+    background-color: yellowgreen;
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+
+}
+
+table,th,td{
+    border: 2px red solid;
+}

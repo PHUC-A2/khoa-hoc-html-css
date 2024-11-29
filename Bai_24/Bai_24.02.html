@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cách dùng Opacity,Display, Visibility</title>
+    <style>
+      img {
+        transition: 1.5s; /*Sau 1.5 giây thì thực hiện*/
+      }
+      input:checked ~ img {
+        /*visibility: hidden;*/
+        /*display: none;*/
+        visibility: hidden;
+      }
+      input:checked ~ p {
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Lorem ipsum dolor sit amet.</h1>
+
+    <label for="viDu">Click vào em đi:</label>
+    <input type="checkbox" name="viDu" id="viDu" />
+    <img src="/Anh2.avif" alt="Ảnh 2" />
+
+    <input type="radio" name="nam" id="nam" />
+    <label for="nam">Nam:</label>
+
+    <label for="truot">Thanh trượt</label>
+    <input type="range" name="truot" id="truot" />
+
+    <label for="pass">Pass:</label>
+    <input type="password" name="pass" id="pass" />
+
+    <label for="mau">Màu:</label>
+    <input type="color" name="mau" id="mau" />
+
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
+    margin: 0;
+    background-color: rgba(169, 169, 169, 0.178);
+    align-items: center;
+    justify-content: center;
+}
+.login{
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(169, 169, 169, 0.178) ;
+    text-align: center;
+
+}
+.reset_submit:hover{
+    background-color:yellowgreen;
+    color: white;
+}
+
+form{
+    margin-top: 20px;
+}
+
+@keyframes move{
+    0%{transform: :translateX(0);}
+    50%{transform: :translateX(100px);}
+    1000%{transform: :translateX(0);}
+    
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: azure;
+    animation: move 2s infinite;
+}

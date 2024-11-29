@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sinh viên</title>
+    <link rel="stylesheet" href="Bai6.css" />
+  </head>
+  <body>
+    <header>
+      <hr />
+      <h2>Giải phương trình bậc nhất: ax + b = 0</h2>
+    </header>
+    <main>
+      <article class="ketQua">
+        <table id="ketQua">
+          <tr>
+            <td id="resultCell"></td>
+          </tr>
+          <!-- <tr>
+            <td id="resultCell"></td>
+          </tr> -->
+        </table>
+      </article>
+      <article class="tinhToan" id="tinhToan">
+        <label for="soA">Nhập hệ số a:</label>
+        <input type="number" name="soA" id="soA" />
+
+        <br /><label for="soB">Nhập hệ số b:</label>
+        <input type="number" name="soB" id="soB" />
+
+        <br /><button class="buttonGiai" type="button" onclick="phuongTrinh()">
+          Giải
+        </button>
+      </article>
+    </main>
+    <footer>
+      <hr />
+    </footer>
+    <script src="Bai6.js"></script>
+  </body>
+</html>

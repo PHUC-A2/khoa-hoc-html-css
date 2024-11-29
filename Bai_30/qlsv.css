@@ -1,0 +1,23 @@
+body {
+  background-image: url(/Anh/image.png);
+  color: aliceblue;
+}
+tfoot tr td {
+  text-align: center;
+}
+header ul li {
+  float: left;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  padding: 20px;
+}
+header ul li a:hover {
+  background-color: aquamarine;
+}
+ul {
+  list-style-type: none; /*Xóa dấu . của ul*/
+}
+ul li a {
+  text-decoration: none;
+}
